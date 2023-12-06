@@ -1,7 +1,7 @@
 {
   "name": "cypress-cucumber",
   "version": "1.0.0",
-  "description": "",
+  "description": "BDD Style tests with Cypress and Cucumber",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,12 @@
     "cypress": "^13.6.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "prettier": "^3.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/cucumber-tests",
+    "cucumberJson": {
+      "generate": false
+    }
   }
 }
